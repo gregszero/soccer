@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15351678-e14b-4e6b-ab69-45c04d59483b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/soccer/SoccerParser.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.ex" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/soccer.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/soccer/application.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/application.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/soccer/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/Router.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soccer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/soccer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/soccer/Router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/Router.ex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565916419440</updated>
-      <workItem from="1565916420820" duration="11568000" />
+      <workItem from="1565916420820" duration="13392000" />
     </task>
     <servers />
   </component>

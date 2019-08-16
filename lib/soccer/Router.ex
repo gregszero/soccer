@@ -12,25 +12,50 @@ defmodule Soccer.Router do
     send_resp(conn, 200, "Hi!")
   end
 
-  #GET /league
-  #Returns a list of all leagues
+  @doc """
+  GET /league
+  Returns a list of all leagues
+
+  ## Parameters
+  ## Examples
+
+  """
   get "/league" do
     send_resp(conn, 200, Soccer.leagues())
   end
 
+  @doc """
+  GET /league/:id
+  Receive league id and returns a list of all season from this league
 
-  # GET /league/:id
-  # Receive league id and returns a list of all sessions from this league
+  ## Parameters
+
+    - id: String that represents the identifier of the league
+
+  ## Examples
+
+  """
   get "/league/:id" do
     send_resp(conn, 200, Soccer.league(id))
   end
 
 
-  #  GET /league/:id/session/:sess_id
-  # Receive league id and session id
-  # Returns a list of all results from this league and session
-  get "/league/:id/session/:sess_id" do
-    send_resp(conn, 200, Soccer.league(id,sess_id))
+
+  # Receive league id and season id
+  #
+  @doc """
+  GET /league/:id/season/:season_id
+  Returns a list of all results from this league and season
+
+  ## Parameters
+
+    - id: String that represents the identifier of the league
+    - season_id: String that represents the identifier of the Season
+  ## Examples
+
+  """
+  get "/league/:id/season/:season_id" do
+    send_resp(conn, 200, Soccer.league(id,season_id))
   end
 
   match _ do
