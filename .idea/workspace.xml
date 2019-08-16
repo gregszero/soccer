@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15351678-e14b-4e6b-ab69-45c04d59483b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/cowboy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/cowlib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/earmark.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ex_doc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/hackney.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/kadabra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/plug.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/plug_cowboy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/plug_crypto.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ranch.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/telemetry.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/x509.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/soccer/router.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/config.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/soccer/application.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/application.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/soccer/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/router.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soccer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/soccer.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +48,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -115,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565916419440</updated>
-      <workItem from="1565916420820" duration="813000" />
+      <workItem from="1565916420820" duration="1122000" />
     </task>
     <servers />
   </component>
