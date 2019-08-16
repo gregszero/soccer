@@ -4,11 +4,11 @@ defmodule Soccer.Application do
   @moduledoc false
 
   use Application
+  require Logger
 
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: Soccer.Worker.start_link(arg)
-      # {Soccer.Worker, arg}
+      {Plug.Cowboy, scheme: :http, plug: Soccer.Router, options: [port: 8080]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
