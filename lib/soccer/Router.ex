@@ -40,9 +40,6 @@ defmodule Soccer.Router do
   end
 
 
-
-  # Receive league id and season id
-  #
   @doc """
   GET /league/:id/season/:season_id
   Returns a list of all results from this league and season
