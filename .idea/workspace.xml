@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15351678-e14b-4e6b-ab69-45c04d59483b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/config.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/Data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/soccer/SoccerParser.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.ex" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/soccer.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/soccer/application.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/application.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/soccer/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/router.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/soccer/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/Router.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mix.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soccer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/soccer.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,6 +49,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -95,6 +101,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Run --no-halt" type="org.elixir_lang.elixir.configuration.ConfigurationType" factoryName="Elixir">
+      <module name="soccer" />
+      <elixir>
+        <argument>--no-halt</argument>
+      </elixir>
+      <module name="soccer" />
+      <module-filters inherit-application-module-filters="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -106,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565916419440</updated>
-      <workItem from="1565916420820" duration="1122000" />
+      <workItem from="1565916420820" duration="11568000" />
     </task>
     <servers />
   </component>

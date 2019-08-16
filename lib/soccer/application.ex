@@ -8,7 +8,7 @@ defmodule Soccer.Application do
 
   def start(_type, _args) do
     children = [
-      {Plug.Cowboy, scheme: :http, plug: Soccer.Router, options: [port: cowboy_port]}
+      {Plug.Cowboy, scheme: :http, plug: Soccer.Router, options: [port: cowboy_port()]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
@@ -17,6 +17,6 @@ defmodule Soccer.Application do
     Supervisor.start_link(children, opts)
   end
 
-  defp cowboy_port, do: Application.get_env(:example, :cowboy_port, 8080)
+  defp cowboy_port, do: Application.get_env(:soccer, :cowboy_port, 8080)
 
 end
