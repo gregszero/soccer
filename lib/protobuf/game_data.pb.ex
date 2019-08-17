@@ -5,13 +5,13 @@ defmodule GameData do
   @type t :: %__MODULE__{
           league: String.t(),
           season: String.t(),
-          results: [GameData.Games.t()]
+          games: [GameData.Games.t()]
         }
-  defstruct [:league, :season, :results]
+  defstruct [:league, :season, :games]
 
   field :league, 1, type: :string
   field :season, 2, type: :string
-  field :results, 3, repeated: true, type: GameData.Games
+  field :games, 3, repeated: true, type: GameData.Games
 end
 
 defmodule GameData.Games do

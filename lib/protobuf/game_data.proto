@@ -16,5 +16,5 @@ message GameData {
          string htr = 10;
     }
 
-     repeated Games results = 3;
+     repeated Games games = 3;
 }

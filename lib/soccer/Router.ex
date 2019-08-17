@@ -109,7 +109,7 @@ defmodule Soccer.Router do
     game_data = GameData.new(
     league: id,
     season: season_id,
-    results:
+    games:
       data
       |>Enum.map(fn game ->
         GameData.Games.new(

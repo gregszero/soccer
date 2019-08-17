@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15351678-e14b-4e6b-ab69-45c04d59483b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/protobuf/game_data.pb.ex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/protobuf/game_data.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/protobuf/game_data.pb.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/protobuf/game_data.pb.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/protobuf/game_data.proto" beforeDir="false" afterPath="$PROJECT_DIR$/lib/protobuf/game_data.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/soccer/Router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/Router.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mix.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soccer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/soccer.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +119,7 @@
       <updated>1565916419440</updated>
       <workItem from="1565916420820" duration="19424000" />
       <workItem from="1566049649217" duration="30000" />
-      <workItem from="1566049699714" duration="5921000" />
+      <workItem from="1566049699714" duration="6132000" />
     </task>
     <servers />
   </component>
