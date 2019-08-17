@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15351678-e14b-4e6b-ab69-45c04d59483b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/soccer.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/domain/soccer.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/soccer/Router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/api/router.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/soccer/SoccerParser.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer_parser.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/soccer/application.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/application.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +119,7 @@
       <updated>1565916419440</updated>
       <workItem from="1565916420820" duration="19424000" />
       <workItem from="1566049649217" duration="30000" />
-      <workItem from="1566049699714" duration="7125000" />
+      <workItem from="1566049699714" duration="7267000" />
     </task>
     <servers />
   </component>
