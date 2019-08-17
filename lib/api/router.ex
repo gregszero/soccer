@@ -38,7 +38,7 @@ defmodule Soccer.Router do
 
   @doc """
   GET /league/:id/season/:season_id
-  Returns a list of all results from this league and season
+  Returns a list of all results from this league and season in JSON
 
   ## Parameters
 
@@ -52,6 +52,17 @@ defmodule Soccer.Router do
     send_resp(conn, 200, encode_games(games, id, season_id))
   end
 
+  @doc """
+  GET /proto/league/:id/season/:season_id
+  Returns a list of all results from this league and season in Proto
+
+  ## Parameters
+
+    - id: String that represents the identifier of the league
+    - season_id: String that represents the identifier of the Season
+  ## Examples
+
+  """
   get "proto/league/:id/season/:season_id" do
     games = Soccer.league(id, season_id)
     conn
