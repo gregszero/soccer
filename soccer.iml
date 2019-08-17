@@ -49,5 +49,9 @@
     <orderEntry type="library" name="flow" level="project" />
     <orderEntry type="library" name="gen_stage" level="project" />
     <orderEntry type="library" name="inch_ex" level="project" />
+    <orderEntry type="library" name="protobuf" level="project" />
+    <orderEntry type="library" name="dialyxir" level="project" />
+    <orderEntry type="library" name="credo" level="project" />
+    <orderEntry type="library" name="eqc_ex" level="project" />
   </component>
 </module>

@@ -1,0 +1,20 @@
+syntax = "proto3";
+message GameData {
+     string league = 1;
+     string season = 2;
+
+    message Games {
+         string id = 1;
+         string date = 2;
+         string home_team = 3;
+         string away_team = 4;
+         string fth = 5;
+         string ftag = 6;
+         string ftr = 7;
+         string hthg = 8;
+         string htag = 9;
+         string htr = 10;
+    }
+
+     repeated Games results = 3;
+}

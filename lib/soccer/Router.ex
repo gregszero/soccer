@@ -54,8 +54,15 @@ defmodule Soccer.Router do
 
   """
   get "/league/:id/season/:season_id" do
-    games = Soccer.league(id,season_id)
+    games = Soccer.league(id, season_id)
     send_resp(conn, 200, encode_games(games, id, season_id))
+  end
+
+  get "proto/league/:id/season/:season_id" do
+    games = Soccer.league(id, season_id)
+    conn
+    |> put_resp_header("content-type", "application/octet-stream")
+    |> send_resp(200, encode_proto(games, id, season_id))
   end
 
   match _ do
@@ -70,8 +77,6 @@ defmodule Soccer.Router do
     send_resp(conn, conn.status, "Something went wrong")
   end
 
-
-
   defp encode_league(data) do
     Poison.encode!(%{leagues: data})
   end
@@ -81,13 +86,12 @@ defmodule Soccer.Router do
   end
 
   defp encode_games(data, id, season_id) do
-
-
     Poison.encode!(%{
       league: id,
       season: season_id,
       games: data
              |> Enum.map(fn game -> %{
+                id: Enum.at(game, 0),
                 date: Enum.at(game, 3),
                 home_team: Enum.at(game, 4),
                 away_team: Enum.at(game, 5),
@@ -99,7 +103,29 @@ defmodule Soccer.Router do
                 htr: Enum.at(game, 11)
               } end)
     })
+  end
 
+  defp encode_proto(data, id, season_id) do
+    game_data = GameData.new(
+    league: id,
+    season: season_id,
+    results:
+      data
+      |>Enum.map(fn game ->
+        GameData.Games.new(
+          id: Enum.at(game, 0),
+          date: Enum.at(game, 3),
+          home_team: Enum.at(game, 4),
+          away_team: Enum.at(game, 5),
+          fthg: Enum.at(game, 6),
+          ftag: Enum.at(game, 7),
+          ftr: Enum.at(game, 8),
+          hthg: Enum.at(game, 9),
+          htag: Enum.at(game, 10),
+          htr: Enum.at(game, 11))
+      end)
+    )
+    GameData.encode(game_data)
   end
 
 end

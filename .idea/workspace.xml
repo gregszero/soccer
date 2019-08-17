@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15351678-e14b-4e6b-ab69-45c04d59483b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/protobuf/game_data.pb.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/protobuf/game_data.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/soccer.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/soccer/Router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/soccer/Router.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mix.exs" beforeDir="false" afterPath="$PROJECT_DIR$/mix.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mix.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mix.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soccer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/soccer.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +40,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -96,11 +101,9 @@
       </method>
     </configuration>
     <configuration name="Run --no-halt" type="org.elixir_lang.elixir.configuration.ConfigurationType" factoryName="Elixir">
-      <module name="soccer" />
       <elixir>
         <argument>--no-halt</argument>
       </elixir>
-      <module name="soccer" />
       <module-filters inherit-application-module-filters="true" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,7 +120,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565916419440</updated>
-      <workItem from="1565916420820" duration="18491000" />
+      <workItem from="1565916420820" duration="19424000" />
+      <workItem from="1566049649217" duration="30000" />
+      <workItem from="1566049699714" duration="5921000" />
     </task>
     <servers />
   </component>
@@ -129,10 +134,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

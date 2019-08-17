@@ -24,6 +24,7 @@ defmodule Soccer.MixProject do
     [
       {:flow, "~> 0.14"},
       {:nimble_csv, "~> 0.3"},
+      {:protobuf, "~> 0.5.3"},
       {:plug_cowboy, "~> 2.0"},
       {:poison, "~> 3.1"},
     ]
