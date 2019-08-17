@@ -2,15 +2,9 @@ defmodule Soccer.Router do
   use Plug.Router
   use Plug.ErrorHandler
 
-  # Placing parser after match to parse only after a
-  # route match
   plug(Plug.Logger)
   plug :match
   plug :dispatch
-
-  get "/" do
-    send_resp(conn, 200, "Hi!")
-  end
 
   @doc """
   GET /league
@@ -76,6 +70,8 @@ defmodule Soccer.Router do
     IO.inspect(stack, label: :stack)
     send_resp(conn, conn.status, "Something went wrong")
   end
+
+  ## Encoders
 
   defp encode_league(data) do
     Poison.encode!(%{leagues: data})
