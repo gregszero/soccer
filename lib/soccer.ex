@@ -1,6 +1,7 @@
 defmodule Soccer do
   @moduledoc """
   Documentation for Soccer.
+  Provides methods for retrieve leagues, sessions and match data
   """
 
   @doc """
