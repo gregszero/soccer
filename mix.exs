@@ -27,6 +27,8 @@ defmodule Soccer.MixProject do
       {:protobuf, "~> 0.5.3"},
       {:plug_cowboy, "~> 2.0"},
       {:poison, "~> 3.1"},
+      {:earmark, "~> 1.2", only: :dev},
+      {:ex_doc, "~> 0.19", only: :dev}
     ]
   end
 end

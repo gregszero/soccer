@@ -1,4 +1,9 @@
 defmodule Soccer.Router do
+  @moduledoc """
+  Documentation for Soccer.Router
+  Defines rest routes
+  """
+
   use Plug.Router
   use Plug.ErrorHandler
 
@@ -16,7 +21,7 @@ defmodule Soccer.Router do
   """
   get "/league" do
     leagues = Soccer.leagues()
-    send_resp(conn, 200, encode_league(leagues))
+    send_resp(conn, 200, DataEncoder.encode_league(leagues))
   end
 
   @doc """
@@ -32,7 +37,7 @@ defmodule Soccer.Router do
   """
   get "/league/:id" do
     seasons = Soccer.league(id)
-    send_resp(conn, 200, encode_seasons(seasons))
+    send_resp(conn, 200, DataEncoder.encode_seasons(seasons))
   end
 
 
@@ -49,7 +54,7 @@ defmodule Soccer.Router do
   """
   get "/league/:id/season/:season_id" do
     games = Soccer.league(id, season_id)
-    send_resp(conn, 200, encode_games(games, id, season_id))
+    send_resp(conn, 200, DataEncoder.encode_games(games, id, season_id))
   end
 
   @doc """
@@ -67,7 +72,7 @@ defmodule Soccer.Router do
     games = Soccer.league(id, season_id)
     conn
     |> put_resp_header("content-type", "application/octet-stream")
-    |> send_resp(200, encode_proto(games, id, season_id))
+    |> send_resp(200, DataEncoder.encode_proto(games, id, season_id))
   end
 
   match _ do
@@ -80,59 +85,6 @@ defmodule Soccer.Router do
     IO.inspect(reason, label: :reason)
     IO.inspect(stack, label: :stack)
     send_resp(conn, conn.status, "Something went wrong")
-  end
-
-  ## Encoders
-
-  defp encode_league(data) do
-    Poison.encode!(%{leagues: data})
-  end
-
-  defp encode_seasons(data) do
-    Poison.encode!(%{seasons: data})
-  end
-
-  defp encode_games(data, id, season_id) do
-    Poison.encode!(%{
-      league: id,
-      season: season_id,
-      games: data
-             |> Enum.map(fn game -> %{
-                id: Enum.at(game, 0),
-                date: Enum.at(game, 3),
-                home_team: Enum.at(game, 4),
-                away_team: Enum.at(game, 5),
-                fthg: Enum.at(game, 6),
-                ftag: Enum.at(game, 7),
-                ftr: Enum.at(game, 8),
-                hthg: Enum.at(game, 9),
-                htag: Enum.at(game, 10),
-                htr: Enum.at(game, 11)
-              } end)
-    })
-  end
-
-  defp encode_proto(data, id, season_id) do
-    game_data = GameData.new(
-    league: id,
-    season: season_id,
-    games:
-      data
-      |>Enum.map(fn game ->
-        GameData.Games.new(
-          id: Enum.at(game, 0),
-          date: Enum.at(game, 3),
-          home_team: Enum.at(game, 4),
-          away_team: Enum.at(game, 5),
-          fthg: Enum.at(game, 6),
-          ftag: Enum.at(game, 7),
-          ftr: Enum.at(game, 8),
-          hthg: Enum.at(game, 9),
-          htag: Enum.at(game, 10),
-          htr: Enum.at(game, 11))
-      end)
-    )
-    GameData.encode(game_data)
   end
 
 end

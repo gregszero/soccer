@@ -1,21 +1,40 @@
 # Soccer
 
-**TODO: Add description**
+Simple Rest and Protobuf API for soccer results
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `soccer` to your list of dependencies in `mix.exs`:
+[Install elixir](https://elixir-lang.org/install.html#distributions)
 
-```elixir
-def deps do
-  [
-    {:soccer, "~> 0.1.0"}
-  ]
-end
-```
+Install dependencies
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/soccer](https://hexdocs.pm/soccer).
+ `$ mix local.hex`
+ 
+ `$ mix.deps get`
 
+## Running with Docker with load balancing
+
+Init a docker Swarm
+
+`$ docker swarm init`
+
+Build an image 
+
+`$ docker build .`
+
+Deploy image to Swarm 
+
+`$ docker stack deploy --compose-file=docker-compose.yml ex`
+
+Check if services are up
+
+`$ docker service ls`
+
+Then try 
+
+
+## Documentation
+
+You can generate documentation running:
+
+`$ mix docs`
