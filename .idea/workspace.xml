@@ -4,7 +4,6 @@
     <list default="true" id="15351678-e14b-4e6b-ab69-45c04d59483b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger.yml" beforeDir="false" afterPath="$PROJECT_DIR$/swagger.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +191,7 @@
       <workItem from="1566248060639" duration="816000" />
       <workItem from="1566249080472" duration="218000" />
       <workItem from="1566256234013" duration="1653000" />
-      <workItem from="1566339338730" duration="5077000" />
+      <workItem from="1566339338730" duration="5599000" />
     </task>
     <servers />
   </component>
