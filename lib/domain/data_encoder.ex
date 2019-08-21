@@ -5,15 +5,15 @@ defmodule DataEncoder do
   """
 
 
-  defp encode_league(data) do
+  def encode_league(data) do
     Poison.encode!(%{leagues: data})
   end
 
-  defp encode_seasons(data) do
+  def encode_seasons(data) do
     Poison.encode!(%{seasons: data})
   end
 
-  defp encode_games(data, id, season_id) do
+  def encode_games(data, id, season_id) do
     Poison.encode!(%{
       league: id,
       season: season_id,
@@ -33,7 +33,7 @@ defmodule DataEncoder do
     })
   end
 
-  defp encode_proto(data, id, season_id) do
+  def encode_proto(data, id, season_id) do
     game_data = GameData.new(
       league: id,
       season: season_id,
