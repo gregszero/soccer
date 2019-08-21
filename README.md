@@ -33,8 +33,12 @@ Check if services are up
 Then try 
 
 
-## Documentation
+## Application Documentation
 
 You can generate documentation running:
 
 `$ mix docs`
+
+## API Documentation
+
+Import the file `swagger.yml` to [Swagger Editor](https://editor.swagger.io/)
