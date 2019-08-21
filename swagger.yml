@@ -1,0 +1,99 @@
+openapi: 3.0.0
+info:
+  version: '1'
+  title: 'Soccer Api documentation'
+  description: ''
+paths:
+  /league:
+    get:
+      summary: Return list of League Divisions
+      responses:
+        '200':    # status code
+          description: A JSON Object with divisions
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  leagues:
+                    type: array
+                    items:
+                      type: string
+  /league/{id}:
+    get:
+      summary: Return list of Seasons from a requested League
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':    # status code
+          description: A JSON Object of seasons
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  seasons:
+                    type: array
+                    items:
+                      type: string
+  /league/{id}/season/{season_id}:
+    get:
+      summary: Return list of matches from requested Division and Season
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: season_id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':    # status code
+          description: A JSON Object with Division, Season and a list of Games
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Data'
+
+
+components:
+  schemas:
+    Data:
+      properties:
+        season:
+          type: string
+        division:
+          type: string
+        games:
+          type: array
+          items:
+            $ref: '#/components/schemas/Game'
+    Game:
+      properties:
+        id:
+          type: string
+        htr:
+          type: string
+        hthg:
+          type: string
+        htag:
+          type: string
+        home_team:
+          type: string
+        ftr:
+          type: string
+        fthg:
+          type: string
+        ftag:
+          type: string
+        date:
+          type: string
+        away_team:
+          type: string
