@@ -2,11 +2,11 @@ openapi: 3.0.0
 info:
   version: '1'
   title: 'Soccer Api documentation'
-  description: ''
+  description: 'All JSON and Protobuf routes from Soccer Application'
 paths:
   /league:
     get:
-      summary: Return list of League Divisions
+      summary: Return list of Leagues
       responses:
         '200':    # status code
           description: A JSON Object with divisions
