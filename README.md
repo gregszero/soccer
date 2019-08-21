@@ -22,6 +22,11 @@ You can generate documentation running:
 
 Import the file `swagger.yml` to [Swagger Editor](https://editor.swagger.io/)
 
+## Benchmarking
+
+To generate benchmarking results, run:
+
+`$ mix run test/benchmarking/soccer_benchmark.ex`
 
 ## Running with Docker with load balancing
 
